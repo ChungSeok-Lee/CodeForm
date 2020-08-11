@@ -4,11 +4,14 @@ import requests
 from bs4 import BeautifulSoup as bs
 import sqlite3
 
+# --예시--#
 # @background()
 # def task_hello(schedule= 10, repeat=60):
 #     time_tuple = time.localtime()
 #     time_str = time.strftime("%m/%d/%Y, %H:%M:%S", time_tuple)
 #     print("task ...Hello World!", time_str)
+
+# django.setting.py 중 INSTALLED_APPS에 'background_task' 추가
 
 @background()
 def task_crawling_daum(schedule= 10, repeat=60):

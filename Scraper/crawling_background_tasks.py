@@ -12,6 +12,7 @@ import sqlite3
 #     print("task ...Hello World!", time_str)
 
 # django.setting.py 중 INSTALLED_APPS에 'background_task' 추가
+# urls에서 함수 import하고 최하단에 함수 기입
 
 @background()
 def task_crawling_daum(schedule= 10, repeat=60):
